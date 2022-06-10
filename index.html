@@ -1,0 +1,389 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>one direction 1D</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+ 
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>One Direction boy band</b></h1>
+    <h6>la banda que fue la  <span class="w3-red">numero 1 mundial mente </span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/one direction pc.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-red">5 integrantes</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>THIS IS US</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">INCRESAR</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+   
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Hazza styles</h3>
+          <h5>Amo las sandias 
+              <span class="w3-opacity">tatata, ta,ta ta ta </span>
+          </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/harry fetus.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> Harry siendo la cara principal del grupo</strong>tengo 17 años y pertenesco a uno de los grupos mas reconocidos mundial mente , me gustan pintarme las uñas sin no me las pinto no me siento yo , gusta ser yo sin etiquetas , en años sere el mas alto de los chicos , soy muy divertido y extrovertido soy un loco amante de la Coca Cola y los chocolates creo que si no fuera cantante hubiera estudiado fisioterapia mis apodos son Hazza, Haz, Barry, Curly , mis colores favoritos son Verde y Naranja , me gusta mucho lou (somos pareja pero shh ;D ) es mutuo ya lo hablamos. </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">4</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/larry.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>LOU <span class="w3-opacity w3-medium">May 3, 2017, 6:32 PM</span></h4>
+                <p> hi! </p>
+              </div>
+              <div class="w3-row w3-margin-bottom"></div>
+              <div class="w3-col l2 m3">
+                <img src="img/hyl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>HAZZA <span class="w3-opacity w3-medium">May 3, 2017, 7:00 PM</span></h4>
+                <p>jsjsjs oops </p>
+              </div>
+              <div class="w3-row w3-margin-bottom"></div>
+              <div class="w3-col l2 m3">
+                <img src="img/nini.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>NINI <span class="w3-opacity w3-medium">May 3, 2017, 6:40 PM</span></h4>
+                <p>harry es muy simpatico jsasjas </p>
+              </div>
+              <div class="w3-col l2 m3">
+                <img src="img/nini.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>NINI <span class="w3-opacity w3-medium">May 3, 2017, 6:42 PM</span></h4>
+                <p>hazz siendo la cara del grupo y yo el talento JA  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Bear payne M </h3>
+          <h5>soy tan grande como un oso <span class="w3-opacity">Booh</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/liambear.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <p><strong>me gusta el chocolate  </strong> muchos dicen que paresco un oso nose por que igual no me molesta </p>
+          <p>me llamo liam y me gusta mucho Una de las cosas que más me gusta de las giras musicales, es que puede comer todo lo que quiera. Debido a que durante el espectáculo, la cantidad de calorías que quemo es impresionante , si no fuera cantante seria bombero , segun los chicos soy el que mejor baile bueno pues que puedo decir , creo que lo que mas increibles que me a pasado es ser uno de los invitados de la NASA , mi color favorito es el naranja , cuando estaba en la esucela sufri de bullying fue una de las razone spor las que entro boxeo , me gusta mucho la voz de zayn tiene demasiado talento  </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+         
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/liamfetus.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Zaynie <span class="w3-opacity w3-medium">April 26, 2017, 10:52 PM</span></h4>
+                <p>eres increible bear </p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/zayn malik.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>bear payne M <span class="w3-opacity w3-medium">April 23, 2017, 11:00 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+              <div class="w3-col l2 m3">
+                <img src="img/larry.jpg " style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>LOU <span class="w3-opacity w3-medium">May 3, 2017, 6:32 PM</span></h4>
+                <p>eres grande liam te amamos  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>NINI HORAN</h3>
+          <h5>no solo soy divertido si no con  mucho talento <span class="w3-opacity">pOtEto</span></h5>
+        </div>
+        <div class="w3-justify">
+          <img src="img/nialll.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Me llamo niall JAMES horan </strong> liam y yo tenemos el mismo segundo nombre xd</p>
+          <p>me gusta mucho el golf y tocar guitarra , soy irlandes y junto a hazz y liam somos los mas pequeños ahre JAJAJA , me lastime la rodilla muy feo y el payaso de simon no me quiso mandasr a operar , troste , harry y yo parecemos los bebes del grupo xd , louis es gran jugador al igual de liam pero yo soy mejor en golf , mi musica es algo tranqio pero con un ritmo sabroso , amo a mis fans  </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+        
+         
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/hyl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>HAZZA<span class="w3-opacity w3-medium">April 10, 2018, 7:22 PM</span></h4>
+                <p>nini es como un pequeño baby</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/liamfetus.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Zaynie <span class="w3-opacity w3-medium">April 8, 2018, 10:32 PM</span></h4>
+                <p>tienes toda la razon y un gran jugador de golf</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/zayn malik.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>bear payne m <span class="w3-opacity w3-medium">April 7, 2018, 9:12 PM</span></h4>
+                <p>nini aparte es uno que le pone comedia al grupo!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/RBB y SBB.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>RBB y SBB</h4>
+          <p>Soy lo mas iconico de One direction , en especial larry </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Post mas gracioosos</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="img/zayn malik.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">bear payne M</span>
+            <br>
+            <span>por que harry siempre desaparece y desaparece , ni que fuera zayn</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/larry.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">LOU</span>
+            <br>
+            <span>niyal aun te duele la cara de semejante pelotaso que vos mismo te hiciste? JASJJASAJS</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/hyl.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">HAZZA</span>
+            <br>
+            <span>watermelon, watermelon, watermelon, watermelon, watermelon JA</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/liamfetus.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Zaynie</span>
+            <br>
+            <span>si harry se sigue cayendo solo en los ecenarios se nos quedara chueco JSJJAJSJA</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">louis</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">larry</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">RBB </span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">liam</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">merch</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SBB</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">zayn</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">music</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">fans</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">niall</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">one direction</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">tours</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">harry</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">zaim</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="https://i.pinimg.com/originals/71/bd/0e/71bd0e013bd5d6704678bc5ef8e238d3.gif" alt="Jeans" style="width:100%"></p>
+            <p><img src="img/one dii.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/onee.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/titax.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+<!-- Inspiration -->
+<div class="w3-white w3-margin">
+  <div class="w3-container w3-padding w3-black">
+    <h4>Art de fans</h4>
+  </div>
+  <div class="w3-row-padding w3-white">
+    <div class="w3-col s6">
+      <p><img src="img/wow.jpg" alt="Jeans" style="width:100%"></p>
+      <p><img src="img/mi boys.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+    </div>
+    <div class="w3-col s6">
+     <p><img src="img/harrr.jpg" alt="Jeans" style="width:100%"></p>
+    <p><img src="img/ziamm.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p> 
+   </div>
+
+  </div>
+</div>
+<hr>
+
+      <div class="w3-white w3-margin">
+
+
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+     
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
